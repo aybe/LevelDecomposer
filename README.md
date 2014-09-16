@@ -5,7 +5,7 @@ LevelDecomposer
 
 **Binaries**
 
-Get a ready to use version [here](https://github.com/aybe/LevelDecomposer/releases).
+Pre-built binaries are available [here](https://github.com/aybe/LevelDecomposer/releases).
 
 
 **Example**
