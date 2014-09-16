@@ -44,6 +44,8 @@ The other way around is also possible.
 
 - both command-line utilities are self-contained thanks to Fody, i.e. you only need the EXE
 
+- the tile index uses a 32-bit integer, that should be enough for most purposes :D
+
 **Limitations**
 
 - make sure that the tile sheet image is in the same folder than the JSON level data
