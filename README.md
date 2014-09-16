@@ -1,17 +1,40 @@
 LevelDecomposer
 ===============
 
-**Description**
-
-This is a package of 2 tools that:
-
-- decomposes a level bitmap to a tile sheet and level data
-
-- recomposes a level bitmap from a tile sheet and level data
+*Converts a level bitmap to a tile sheet / level data and vice-versa.*
 
 **Example**
 
-TODO
+An input level bitmap :
+
+![](https://raw.githubusercontent.com/aybe/LevelDecomposer/master/sample/example_recompose.png)
+
+Gets decomposed to a tile sheet and JSON level data :
+
+![](https://raw.githubusercontent.com/aybe/LevelDecomposer/master/sample/example_decompose.png)
+
+```
+{
+  "SheetName": "decompose.png",
+  "SheetWidth": 256,
+  "SheetHeight": 112,
+  "LevelWidth": 40,
+  "LevelHeight": 24,
+  "TileWidth": 16,
+  "TileHeight": 16,
+  "Tiles": [
+    0,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    // etc ...
+```
+
+The other way around is also possible.
 
 **Notes**
 
@@ -20,3 +43,7 @@ TODO
 - whenever 'LevelDecomposer' is built the 'test' folder gets cleaned
 
 - both command-line utilities are self-contained thanks to Fody, i.e. you only need the EXE
+
+**Limitations**
+
+- make sure that the tile sheet image is in the same folder than the JSON level data
