@@ -54,3 +54,7 @@ The other way around is also possible.
 **Limitations**
 
 - make sure that the tile sheet image is in the same folder than the JSON level data
+
+**TODO**
+
+- allow the user to specify tile sheet width
