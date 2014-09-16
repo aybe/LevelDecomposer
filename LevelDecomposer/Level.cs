@@ -11,7 +11,7 @@ namespace LevelDecomposer
 {
     public static class Level
     {
-        public static void Decompose(string fileName, int tileWidth, int tileHeight, string targetJson, string targetPng)
+        public static void Decompose(string fileName, int tileWidth, int tileHeight, string targetJson, string targetPng, int sheetWidth)
         {
             if (fileName == null) throw new ArgumentNullException("fileName");
             if (!File.Exists(fileName))
@@ -31,6 +31,10 @@ namespace LevelDecomposer
             if (targetJson == null) throw new ArgumentNullException("targetJson");
             if (targetPng == null) throw new ArgumentNullException("targetPng");
 
+            if (sheetWidth <= 0)
+                throw new ArgumentOutOfRangeException("sheetWidth", "Must a multiple of two");
+            if (sheetWidth %2 !=0)
+                throw new ArgumentOutOfRangeException("sheetWidth", "Must a multiple of two");
             int hTiles = pixelWidth / tileWidth;
             int vTiles = pixelHeight / tileHeight;
             WriteableBitmap target = BitmapFactory.New(tileWidth, tileHeight);
@@ -69,9 +73,8 @@ namespace LevelDecomposer
             }
 
             // generate sheet
-            int desiredWidth = 256;
             int count = dictionary.Count;
-            int tilesPerRow = desiredWidth / tileWidth;
+            int tilesPerRow = sheetWidth / tileWidth;
             int rows = count / tilesPerRow + 1;
 
             int desiredHeight = rows * tileHeight;
@@ -126,7 +129,7 @@ namespace LevelDecomposer
             }
 
             // Save sheet
-            var sheet = new LevelSheet(Path.GetFileName(targetPng), desiredWidth, desiredHeight, hTiles, vTiles,
+            var sheet = new LevelSheet(Path.GetFileName(targetPng), sheetWidth, desiredHeight, hTiles, vTiles,
                 tileWidth, tileHeight, level);
             string json = JsonConvert.SerializeObject(sheet, Formatting.Indented);
             string jsonDirectory = EnsureDirectoryExists(targetJson);

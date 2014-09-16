@@ -22,6 +22,9 @@ namespace LevelDecomposerCLI
         [Option('j', "json", Required = true, HelpText = "Output JSON path")]
         public string OutputJson { get; set; }
 
+        [Option('l', "length", Required = true, HelpText = "Tile sheet width desired, in pixels")]
+        public int SheetWidth { get; set; }
+
 
         [ParserState]
         public IParserState LastParserState { get; set; }

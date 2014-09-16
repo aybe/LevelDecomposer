@@ -26,7 +26,7 @@ namespace LevelDecomposerCLI
         private static void Decompose(Options options)
         {
             Level.Decompose(options.InputFile, options.TileWidth, options.TileHeight, options.OutputJson,
-                options.OutputImage);
+                options.OutputImage, options.SheetWidth);
         }
     }
 }
