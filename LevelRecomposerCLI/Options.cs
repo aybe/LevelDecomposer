@@ -5,7 +5,7 @@ namespace LevelRecomposerCLI
 {
     internal class Options
     {
-        [Option('i', "input", Required = true, HelpText = "Input image path")]
+        [Option('i', "input", Required = true, HelpText = "Input JSON level path")]
         public string InputFile { get; set; }
 
 
