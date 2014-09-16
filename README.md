@@ -3,6 +3,11 @@ LevelDecomposer
 
 *Converts a level bitmap to a tile sheet / level data and vice-versa.*
 
+**Binaries**
+
+Get a ready to use version [here](https://github.com/aybe/LevelDecomposer/releases).
+
+
 **Example**
 
 An input level bitmap :
