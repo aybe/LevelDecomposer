@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelDecomposerCLI", "LevelDecomposerCLI\LevelDecomposerCLI.csproj", "{73103864-6CD0-4275-A851-3F87A5714B58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelDecomposer", "LevelDecomposer\LevelDecomposer.csproj", "{15E17A5D-79F1-4175-B785-A0FD4C332E7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LevelRecomposerCLI", "LevelRecomposerCLI\LevelRecomposerCLI.csproj", "{A22940AC-52EA-4629-B5A8-76BC8FA307B2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A8E8BB3F-E472-419C-AFC4-113BE723A862}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{BC9EF803-924B-40E7-BD76-C849C098E390}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73103864-6CD0-4275-A851-3F87A5714B58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73103864-6CD0-4275-A851-3F87A5714B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73103864-6CD0-4275-A851-3F87A5714B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73103864-6CD0-4275-A851-3F87A5714B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E17A5D-79F1-4175-B785-A0FD4C332E7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E17A5D-79F1-4175-B785-A0FD4C332E7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E17A5D-79F1-4175-B785-A0FD4C332E7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E17A5D-79F1-4175-B785-A0FD4C332E7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A22940AC-52EA-4629-B5A8-76BC8FA307B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A22940AC-52EA-4629-B5A8-76BC8FA307B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A22940AC-52EA-4629-B5A8-76BC8FA307B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A22940AC-52EA-4629-B5A8-76BC8FA307B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
