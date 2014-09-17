@@ -7,6 +7,9 @@ LevelDecomposer
 
 Pre-built binaries are available [here](https://github.com/aybe/LevelDecomposer/releases).
 
+**NuGet package**
+
+Get it [here](https://www.nuget.org/packages/LevelDecomposer/).
 
 **Example**
 

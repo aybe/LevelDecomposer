@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Aybe</authors>
+    <owners>Aybe</owners>
+    <!-- <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl> -->
+    <projectUrl>https://github.com/aybe/LevelDecomposer</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Converts a level bitmap to a tile sheet / level data and vice-versa.</description>
+    <releaseNotes>First release</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>2D platformer level import export tile</tags>
+  </metadata>
+</package>
