@@ -9,8 +9,23 @@ using Newtonsoft.Json;
 
 namespace LevelDecomposer
 {
+    /// <summary>
+    /// Provides methods for converting a bitmap level to a tile sheet / level data and vice-versa.
+    /// </summary>
     public static class Level
     {
+
+        /// <summary>
+        /// Decomposes a level bitmap to a tile sheet and a <see cref="LevelSheet"/>.
+        /// </summary>
+        /// <param name="fileName">Bitmap of the level to decompose.</param>
+        /// <param name="tileWidth">Tile width, must be a multiple of <see cref="fileName"/> width.</param>
+        /// <param name="tileHeight">Tile height, must be a multiple of <see cref="fileName"/> height.</param>
+        /// <param name="targetJson">File to write the <see cref="LevelSheet"/> to.</param>
+        /// <param name="targetPng">File to write the level tiles to.</param>
+        /// <param name="sheetWidth">Width in pixels of the tile sheet, must be a multiple of 2.</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static void Decompose(string fileName, int tileWidth, int tileHeight, string targetJson, string targetPng, int sheetWidth)
         {
             if (fileName == null) throw new ArgumentNullException("fileName");
@@ -160,6 +175,13 @@ namespace LevelDecomposer
             return directoryName;
         }
 
+        /// <summary>
+        /// Recomposes a <see cref="LevelSheet"/> to a level bitmap.
+        /// </summary>
+        /// <param name="inputFile">Input file containing a JSON-serialized <see cref="LevelSheet"/>.</param>
+        /// <param name="outputFile">Output file of the bitmap generated.</param>
+        /// <exception cref="ArgumentNullException"></exception>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
         public static void Recompose(string inputFile, string outputFile)
         {
             if (inputFile == null) throw new ArgumentNullException("inputFile");
